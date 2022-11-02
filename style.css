@@ -1,130 +1,151 @@
+
+*{
+    box-sizing: border-box;
+}
+
 html {
-  box-sizing: border-box;
-  font-family: 'Karla';
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit
-}
-
-h2,h4,p {
-  margin:0;
-}
-
-body {
-  padding: 20px;
-  background-color: #e5eff5;
-}
-
-#card-layout {
-  width: 600px;
-  height: 450px;
-  box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.05);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-#top {
-  padding: 35px;
-  width: 100%;
-  height: 45%;
-  background-color: white;
-}
-
-#top h2 {
-  color: #2ec7c4;
-  margin-bottom: 20px;
-}
-
-#top h4 {
-  color: #c0df34;
-  margin-bottom: 10px;
-  font-size: 17px;
-}
-
-#top p {
-  color: #98a6bd;
-  line-height: 1.5;
-  font-size: 15px;
-}
-
-#bottom {
-  width: 100%;
-  height: 55%;
-}
-
-#right-box, #left-box {
-  display: inline-block;
-  padding: 35px;
-  width: 50%;
-  height: 100%;
-  vertical-align: top;
-  color: white;
-}
-
-#left-box {
-  background-color:	#2bb3b1;
-}
-
-#price-time {
-  margin-bottom: 10px;
-}
-#price, #time {
-  display: inline-block;
-}
-
-#price {
-  font-size: 1.75rem;
-  font-weight: 700;
-}
-#time {
-  font-size: 0.9rem;
-  position: relative;
-  margin-left: 7px;
-  top: -5px;
-  opacity: 0.7;
-}
+    box-sizing: border-box;
+    font-family: 'Karla';
+    font-size: 16px;
+  }
   
-
-#left-box p {
-  margin-bottom: 30px;
-  font-size: 15px;
-  color: #e5eff5;
-}
-
-button {
-  background-color: #c0df34;
-  color: white;
-  font-family: Karla;
-  font-size: 14px;
-  font-weight: 700;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.1);
-  width: 100%;
-  height: 27.5%;
-}
-
-button:hover{
-  cursor: pointer;
-  transform: scale(1.005);
-  background-color: #b4d130;
-}
-
-#right-box {
-  background-color: #4abebd;
-}
-
-#right-box h4, #left-box h4 {
-  margin-bottom: 20px;
-}
-
-#right-box ul {  
-  padding: 0;
-  list-style-type: none;  
-  line-height: 1.5;
-  font-size: 13px;
-  opacity: 0.8;
-  color: #e5eff5;
+  body {
+    padding: 20px;
+    background-color: #e5eff5;
+  }
+  
+  h2,h4,p {
+    margin: 0;
+  }
+  
+  #card-layout {
+    
+    box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;  
+  }
+  
+  #top {
+    padding: 35px;
+    width: 100%;
+    height: 45%;
+    background-color: white;
+  }
+  
+  #top h2 {
+    color: #2ec7c4;
+    margin-bottom: 20px;
+  }
+  
+  #top h4 {
+    color: #c0df34;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  
+  #top p {
+    color: #98a6bd;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+  
+  #bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+  }
+  
+  #right-box, #left-box {
+    display: inline-block;
+    padding: 35px;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    color: white;
+  }
+  
+  #left-box {
+    background-color:	#2bb3b1;
+  }
+  
+  #price-time {
+    margin-bottom: 10px;
+  }
+  #price, #time {
+    display: inline-block;
+  }
+  
+  #price {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  
+  #time {
+    font-size: 0.9rem;
+    position: relative;
+    margin-left: 7px;
+    top: -5px;
+    opacity: 0.7;
+  }
+    
+  
+  #left-box p {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #e5eff5;
+  }
+  
+  button {
+    background-color: #c0df34;
+    color: white;
+    font-family: Karla;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 25%;
+    padding: 10px;
+  }
+  
+  button:hover{
+    cursor: pointer;
+    transform: scale(1.005);
+    background-color: #b4d130;
+  }
+  
+  #right-box {
+    background-color: #4abebd;
+  }
+  
+  #right-box h4, #left-box h4 {
+    margin-bottom: 20px;
+  }
+  
+  #right-box ul {  
+    padding: 0;
+    list-style-type: none;  
+    line-height: 1.5;
+    font-size: 13px;
+    opacity: 0.8;
+    color: #e5eff5;
+  }
+  
+  @media (min-width: 576px){
+    #card-layout {
+      margin: 50px auto;
+      width: 600px;
+      height: 450px;
+    }
+    
+    #bottom {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    #right-box, #left-box {
+      flex-basis: 50%;
+  }
 }

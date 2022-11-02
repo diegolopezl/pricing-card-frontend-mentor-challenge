@@ -135,7 +135,7 @@ html {
   
   @media (min-width: 576px){
     #card-layout {
-      margin: 50px auto;
+      margin: 70px auto;
       width: 600px;
       height: 450px;
     }

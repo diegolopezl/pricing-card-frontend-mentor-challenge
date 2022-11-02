@@ -146,6 +146,7 @@ html {
     }
     
     #right-box, #left-box {
-      flex-basis: 50%;
+      width: 50%;
+      height: 100;
   }
 }
